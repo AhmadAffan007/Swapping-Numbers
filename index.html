@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Swapping Numbers</title>
+</head>
+
+<body>
+    <h1>Let's Swap it</h1>
+    <div class="divCal">
+        <form class=form1 name="form1" id="form1" method="post" action="save.php">
+            <input type="text" id="num1" placeholder="Enter Number.." required>
+            <input type="text" id="num2" placeholder="Enter Number.." required>
+            <input type="text" id="num3" placeholder="Enter Number.." required>
+            <input type="text" id="num4" placeholder="Enter Number.." required>
+            <input type="text" id="num5" placeholder="Enter Number.." required>
+            <input type="button" value="Swap Forward" onclick="swapForward()">
+            <input type="button" value="Swap Backward" onclick="swapBackward()">   
+        </form>
+    </div>
+</body>
+
+<script>
+        function swapForward() {
+            const first=document.forms["form1"]["num1"].value;
+            const second=document.forms["form1"]["num2"].value;
+            const third=document.forms["form1"]["num3"].value;
+            const fourth=document.forms["form1"]["num4"].value;
+            const fifth=document.forms["form1"]["num5"].value;
+
+            document.forms["form1"]["num1"].value=fifth;
+            document.forms["form1"]["num2"].value=first;
+            document.forms["form1"]["num3"].value=second;
+            document.forms["form1"]["num4"].value=third;
+            document.forms["form1"]["num5"].value=fourth;
+        }
+        function swapBackward() {
+            const first=document.forms["form1"]["num1"].value;
+            const second=document.forms["form1"]["num2"].value;
+            const third=document.forms["form1"]["num3"].value;
+            const fourth=document.forms["form1"]["num4"].value;
+            const fifth=document.forms["form1"]["num5"].value;
+
+            document.forms["form1"]["num1"].value=second;
+            document.forms["form1"]["num2"].value=third;
+            document.forms["form1"]["num3"].value=fourth;
+            document.forms["form1"]["num4"].value=fifth;
+            document.forms["form1"]["num5"].value=first;
+        }
+</script>
+
+</html>
