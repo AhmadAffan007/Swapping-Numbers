@@ -4,7 +4,7 @@ body {
     padding: 0;
     justify-content: center; 
     align-items: center; 
-    background-image: url('images/blue.jpg');
+    background-image: url('blue.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
 }
@@ -61,7 +61,7 @@ input[type="button"] {
         margin-left: 15px;
     }
     body{
-        background-image: url('images/mobile.jpg');
+        background-image: url('mobile.jpg');
         background-size: auto;
         background-repeat: no-repeat; 
     }
